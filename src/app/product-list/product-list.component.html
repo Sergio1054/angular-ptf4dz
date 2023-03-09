@@ -1,0 +1,32 @@
+<h2>Products</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <th>Id</th>
+      <th>Tipo producto</th>
+      <th>Catgeoria</th>
+      <th>Descripcion</th>
+      <th>Transaccional</th>
+      <th>Control</th>
+      <th>Creado el</th>
+      <th>Actualizado el</th>
+    </tr>
+    <tr *ngFor="let product of products">
+      <td>{{ product.ide_producto }}</td>
+      <td>{{ product.ide_tipoproducto }}</td>
+      <td>{{ product.ide_categoria }}</td>
+      <td>{{ product.des_producto }}</td>
+      <td>{{ product.transaccional }}</td>
+      <td>{{ product.txcontrol }}</td>
+      <td>{{ product.created_at }}</td>
+      <td>{{ product.updated_at }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
